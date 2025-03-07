@@ -23,3 +23,13 @@ h1 {
   color: transparent;
   text-shadow: 0 0 4px white;
 }
+
+button {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  width: 5vw;
+  height: 5vh;
+  transform: translateX(-50%);
+  z-index: 50;
+}
