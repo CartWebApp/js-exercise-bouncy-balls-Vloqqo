@@ -75,8 +75,8 @@ while (balls.length < 500) {
     // away from the edge of the canvas, to avoid drawing errors
     random(0 + size,width - size),
     random(0 + size,height - size),
-    random(-40,7),
-    random(-2,7),
+    random(-30,7),
+    random(-10,7),
     'rgb(' + (225) + ',' + (250) + ',' + (250) +')',
     size
   );
@@ -91,7 +91,6 @@ function loop() {
   for (let i = 0; i < balls.length; i++) {
     balls[i].draw();
     balls[i].update();
-    balls[i].collisionDetect();
   }
 
   requestAnimationFrame(loop);
